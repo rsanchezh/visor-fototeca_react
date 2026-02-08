@@ -3,5 +3,6 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  base: '/visor-fototeca_react/'
   publicDir: 'public',
 });
