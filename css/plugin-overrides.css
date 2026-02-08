@@ -1,0 +1,35 @@
+/* FORCE Plugin to Top Right (Ignoring Mapea Container) */
+
+/* Main Button Container */
+#contenedor-selector-baselayer {
+    position: fixed !important;
+    /* Fixed relative to viewport to avoid container clipping */
+    top: 140px !important;
+    /* Lowered slightly to avoid potential header overlap */
+    right: 20px !important;
+    bottom: auto !important;
+    left: auto !important;
+    z-index: 99999 !important;
+    /* Maximum z-index */
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Layers Panel (The popup) */
+/* Layers Panel (The popup) */
+#contenedor-baseLayer-layers {
+    position: fixed !important;
+    top: 140px !important;
+    right: 110px !important;
+    bottom: auto !important;
+    left: auto !important;
+    z-index: 99999 !important;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Adjust image alignment in the popup slightly if needed */
+.m-area.m-bottom>.m-panel.m-selector-baselayer {
+    margin: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: visible !important;
+}
